@@ -11,7 +11,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Initialize the asynchronous Groq client
-GROQ_API_KEY = "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"  # Replace with your actual Groq API key
+GROQ_API_KEY = "GROQ_API_KEY"  # Replace with your actual Groq API key
 client = AsyncGroq(api_key=GROQ_API_KEY)
 
 # System prompt for the chatbot
@@ -50,7 +50,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 def main() -> None:
     """Start the bot."""
-    TELEGRAM_BOT_TOKEN = "7591081971:AAGa7ymnJCDCJFFlhvIdh8oQOzU0B8-OOP0"  # Replace with your actual Telegram Bot Token
+    TELEGRAM_BOT_TOKEN = "TELEGRAM_BOT_TOKEN"  # Replace with your actual Telegram Bot Token
 
     # Create the Application and pass it your bot's token
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
